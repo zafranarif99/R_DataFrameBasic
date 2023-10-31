@@ -38,14 +38,14 @@ print(result)
 # Let's say we need a new column to describe our data to be more specific.
 # Let's add a new column.
 
-# Add the "dept" column.
+# Add the "Department" column.
 employeeData$Department <- c("Marketing","IT","Risk","Finance","Compliance")
 ndata <- employeeData
 print(ndata)
 
-# Create the second data frame
+# Create another data frame
 employeeNewData <- data.frame(
-  employeeID = c (6:8), 
+  employeeID = c(6:8), 
   employeeName = c("Gojo","Eren","Kawaki"),
   employeeSalary = c(987178.0,723252.25,63324.48), 
   startDate = as.Date(c("2013-05-21","2013-07-30","2014-06-17")),
@@ -53,7 +53,7 @@ employeeNewData <- data.frame(
   stringsAsFactors = FALSE
 )
 
-# Bind the two data frames.
+# We can combine the two data frames by using rbind() function.
 combinedData <- rbind(employeeData,employeeNewData)
 print(combinedData)
 
