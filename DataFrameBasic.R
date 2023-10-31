@@ -47,7 +47,7 @@ print(ndata)
 employeeNewData <- 	data.frame(
   employeeID = c (6:8), 
   employeeName = c("Gojo","Eren","Kawaki"),
-  employeeSalary = c(578.0,722.5,632.8), 
+  employeeSalary = c(987178.0,723252.25,63324.48), 
   startDate = as.Date(c("2013-05-21","2013-07-30","2014-06-17")),
   Department = c("Risk","Compliance","IT"),
   stringsAsFactors = FALSE
