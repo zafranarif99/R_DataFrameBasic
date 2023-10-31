@@ -44,7 +44,7 @@ ndata <- employeeData
 print(ndata)
 
 # Create the second data frame
-employeeNewData <- 	data.frame(
+employeeNewData <- data.frame(
   employeeID = c (6:8), 
   employeeName = c("Gojo","Eren","Kawaki"),
   employeeSalary = c(987178.0,723252.25,63324.48), 
@@ -54,10 +54,10 @@ employeeNewData <- 	data.frame(
 )
 
 # Bind the two data frames.
-emp.finaldata <- rbind(employeeData,employeeNewData)
-print(emp.finaldata)
+combinedData <- rbind(employeeData,employeeNewData)
+print(combinedData)
 
-# Extrat 1st and 8th row, and the 2nd to the 5th column of the finaldata.
-result <- emp.finaldata[c(1,8),c(2:5)]
+# Extract 1st and 8th row, and the 2nd to the 5th column of the combinedData.
+result <- combinedData[c(1,8),c(2:5)]
 print(result)
 
