@@ -32,8 +32,8 @@ extractRow <- employeeData[1:3,]
 print(extractRow)
 
 # Extract 3rd and 5th row with 2nd and 4th column.
-result <- employeeData[c(3,5),c(2,4)]
-print(result)
+extractSpecific <- employeeData[c(3,5),c(2,4)]
+print(extractSpecific)
 
 # Let's say we need a new column to describe our data to be more specific.
 # Let's add a new column.
@@ -48,7 +48,7 @@ employeeNewData <- data.frame(
   employeeID = c(6:8), 
   employeeName = c("Gojo","Eren","Kawaki"),
   employeeSalary = c(987178.0,723252.25,63324.48), 
-  startDate = as.Date(c("2013-05-21","2013-07-30","2014-06-17")),
+  startDate = as.Date(c("2009-02-21","2014-04-12","2019-07-03")),
   Department = c("Risk","Compliance","IT"),
   stringsAsFactors = FALSE
 )
