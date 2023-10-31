@@ -3,25 +3,35 @@
 # First, we need tidyverse installed. Then we can use it by using library().
 library(tidyverse)
 
-# A dataframe from tidyverse package.
+# A data frame from tidyverse package. # This data frame shows the 
+# MPG (Miles per Gallon) of cars and has 234 rows.
 mpg
-
 ?mpg
 
+# To see the whole data
+print(mpg, n=234)
+
+# This is the base of our plot, we use the data from mpg data frame.
 ggplot(data = mpg)
 
+# Let's add something to our plot. Here, we add displ on the x axis
+# and hwy on the y axis
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 
+# We set the color based on the input on "drv" columns which has 3 different inputs.
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = drv))
 
+# We set the color based on the input on "class" columns.
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, alpha = class))
 
+# We set the shape based on the input on "class" columns.
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, shape = class))
 
+# We set the color to red.
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy), color = "red")
 
