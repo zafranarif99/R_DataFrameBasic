@@ -1,4 +1,4 @@
-# In this script, we're going to create scatterplots using ggplot()
+# In this script, we're going to create scatter plots using ggplot()
 
 # First, we need tidyverse installed. Then we can use it by using library().
 library(tidyverse)
@@ -63,7 +63,7 @@ ggplot(data = mpg) +
 ggplot(data = mpg) + 
   geom_line(mapping = aes(x = displ, y = hwy, linetype = drv))
 
-# Let's see the difference between geom_point() and geom_smooth()
+# Let's see some examples for the difference between geom_point() and geom_smooth()
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
   geom_smooth(mapping = aes(x = displ, y = hwy))
@@ -71,7 +71,6 @@ ggplot(data = mpg) +
 ggplot(data = mpg, mapping = aes(x = displ, y = cty)) + 
   geom_point() + 
   geom_smooth()
-
 
 ggplot(data = mpg, mapping = aes(x = displ, y = cty)) + 
   geom_point(mapping = aes(color = class)) + 
