@@ -56,12 +56,14 @@ ggplot(data = mpg) +
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
 
+# We use geom_smooth() to plot a smooth continuous graph.
 ggplot(data = mpg) + 
   geom_smooth(mapping = aes(x = displ, y = hwy))
 
 ggplot(data = mpg) + 
   geom_line(mapping = aes(x = displ, y = hwy, linetype = drv))
 
+# Let's see the difference between geom_point() and geom_smooth()
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
   geom_smooth(mapping = aes(x = displ, y = hwy))
