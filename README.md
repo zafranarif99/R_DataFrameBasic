@@ -1,3 +1,3 @@
 # R_DataFrameBasic
 
-Basic data frame tutorial.
+Basic data frame and scatterplot tutorial.
